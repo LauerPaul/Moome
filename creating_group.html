@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/icon/favicon.ico">
+    <title>MooMe</title>
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="site-wrapper">
+
+  <!---HEADER------------------>
+      <header class="user_authorized">
+        <div class="container">
+          <div class="logo">
+            <a href="#"><img src="img/logo/logo.png" alt="MooMe study wise"></a>
+          </div>
+
+          <div class="lang_menu">
+            <span class="icon_lang_select">Русский</span>
+            <ul class="lang_menu_second">
+              <li>Английский</li>
+              <li>Итальянский</li>
+            </ul>
+          </div>
+
+          <div class="user_menu">
+            <span class="icon_lang_select">Дмитрий</span>
+            <ul class="user_menu_second">
+              <li>Личные данные</li>
+              <li>Языки обучения</li>
+              <li>Групповое обучение</li>
+              <li>Выйти</li>
+            </ul>
+          </div>
+
+          <div class="notice">
+            <span class="count_notice">5</span>
+            <ul class="notice_list">
+              <li>Пользователь Татьяна
+                  подтвердила приглашение
+                  в группу «Класс 11-Б»
+                  <span class="remove_notice">x</span>
+              </li>
+              <li>Пользователь Татьяна
+                  подтвердила приглашение
+                  в группу «Класс 11-Б»
+                  <span class="remove_notice">x</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+  <!--/HEADER/------------------>
+
+<!---ACCOUNT WRAPPer--------->
+
+  <div class="account_wrapper background_page">
+    <div class="container">
+        <!---group_wrap--------->
+
+        <div class="group_wrap">
+          <h1>групповое обучение</h1>
+
+          <form action="" class="group_create">
+              <h2>Создание группы для обучения</h2>
+              <input type="text" placeholder="Введите имя группы">
+
+              <div class="come_text">
+                  <h2>Пригласите участников группы для обучения</h2>
+                  <p>Для этого введите email адреса и мы отправим им письмо с приглашением и ссылкой для подтверждения</p>
+                  <input type="text" placeholder="Введите email участника">
+                  <button class="color_black_button">Добавить</button>
+              </div>
+
+              <h2>Список приглашенных участников</h2>
+
+              <div class="list_user_come">
+
+                  <div class="wrap_list">
+                    <p class="no_item_list_come">
+                      Пока вы никого не пригласили
+                    </p>
+
+                    <ul class="item_user_come marker left">
+                      <li>dmitrynaprienko@gmail.com</li>
+                      <li>oleg_kozachenko@mail.ru</li>
+                      <li>alexx992@rambler.ru</li>
+                      <li>elena@mail.ru</li>
+                      <li>VlAdOs@gmail.com</li>
+                    </ul>
+
+                    <ul class="item_user_come marker right">
+                      <li>dmitrynaprienko@gmail.com</li>
+                      <li>oleg_kozachenko@mail.ru</li>
+                      <li>alexx992@rambler.ru</li>
+                      <li>elena@mail.ru</li>
+                      <li>VlAdOs@gmail.com</li>
+                    </ul>
+
+                  </div>
+
+              </div>
+
+          </form>
+
+        </div>
+        <!--/group_wrap/-------->
+
+    </div>
+  </div>
+  <!--/ACCOUNT WRAPPer/-------->
+
+  <!---FOOTER--------->
+  <footer>
+    <div class="container">
+      <div class="social_line_footer">
+        <ul>
+          <a href="#"><li class="inst"></li></a>
+          <a href="#"><li class="vk"></li></a>
+          <a href="#"><li class="face_book"></li></a>
+        </ul>
+      </div>
+      <div class="mail_footer"><a href="mailto:moome@gmail.com">moome@gmail.com</a></div>
+      <div class="copyright_footer">MooMe © Все права защищены</div>
+      <div class="development_footer">Разработка сайта:<a href="http://markline.agency">MARKLINE</a></div>
+    </div>
+  </footer>
+  <!--/FOOTER/-------->
+</div>
+
+  <!--- POPUP REG/LOGIN --------->
+  <div class="popup_reg_login_wrapper">
+
+    <div class="login_reg_block">
+      <span class="label_lr login_label active">Вход</span>
+      <span class="label_lr reg_label">регистрация</span>
+      <div class="login_block">
+        <form id="login_site">
+          <input type="text" id="name" name="name" placeholder="Введите логин" required>
+          <input type="password" id="pass"  name="pass" placeholder="Введите пароль" required>
+          <button>войти</button>
+        </form>
+        <label class="save_login">
+          <div class="check active">
+        		<input type="checkbox" checked="checked">
+        	</div>
+            Запомнить меня
+        </label>
+        <p class="pass_regen" onclick="remember_pass()">Забыли свой пароль?</p>
+        <div class="login_social">
+          <span>Или войдите через соц. сети</span>
+          <a href="#" class="face_book_login"></a>
+          <a href="#" class="g_plus_login"></a>
+        </div>
+      </div>
+      <div class="reg_block">
+        <form id="reg_site" method="post" onsubmit="javascript:return validate('reg_site','email','name_new','pass_first','pass_sec');">
+          <span class="mask_input_req"><input type="text" id="name_new" name="name" placeholder="Введите логин"></span>
+          <span class="mask_input_req"><input type="text" id="email" name="email" placeholder="Введите e-mail"></span>
+          <span class="mask_input_req"><input type="password" id="pass_first" name="pass" placeholder="Введите пароль"></span>
+          <span class="mask_input_req"><input type="password" id="pass_sec" placeholder="Повторите пароль"></span>
+          <button>зарегистрироваться</button>
+        </form>
+        <p class="agree">
+          Регистируясь, вы принимаете
+          <a href="#">пользовательское соглашение</a>
+        </p>
+      </div>
+    </div>
+    <div class="remember_pass">
+      <h2>напомнить пароль</h2>
+      <form id="remember_pass" method="post">
+        <input type="text" id="mail_remember" name="mail_remember" placeholder="Введите email">
+        <button>напомнить</button>
+      </form>
+      <p class="good_send_request">Ваш пароль был выслан<br/>на указанный email</p>
+    </div>
+  </div>
+  <!---/POPUP REG/LOGIN/--------->
+
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">slider_group_control()</script>
+</body>
+</html>

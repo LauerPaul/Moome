@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/icon/favicon.ico">
+    <title>MooMe</title>
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="site-wrapper">
+
+<!---HEADER------------------>
+    <header class="user_authorized">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="img/logo/logo.png" alt="MooMe study wise"></a>
+        </div>
+
+        <div class="lang_menu">
+          <span class="icon_lang_select">Русский</span>
+          <ul class="lang_menu_second">
+            <li>Английский</li>
+            <li>Итальянский</li>
+          </ul>
+        </div>
+
+        <div class="user_menu">
+          <span class="icon_lang_select">Дмитрий</span>
+          <ul class="user_menu_second">
+            <li>Личные данные</li>
+            <li>Языки обучения</li>
+            <li>Групповое обучение</li>
+            <li>Выйти</li>
+          </ul>
+        </div>
+
+        <div class="notice">
+          <span class="count_notice">5</span>
+          <ul class="notice_list">
+            <li>Пользователь Татьяна
+                подтвердила приглашение
+                в группу «Класс 11-Б»
+                <span class="remove_notice">x</span>
+            </li>
+            <li>Пользователь Татьяна
+                подтвердила приглашение
+                в группу «Класс 11-Б»
+                <span class="remove_notice">x</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+<!--/HEADER/------------------>
+
+<!---ACCOUNT WRAPPer--------->
+
+  <div class="account_wrapper background_page">
+    <div class="container">
+
+      <!---ACCOUNT WRAPPer left_block--------->
+        <div class="account_wrapper_left_block ">
+          <div class="menu_account_wrap">
+            <form action="courses.html" class="button_form">
+              <button class="color_black_button active">Мое обучение</button>
+            </form>
+            <form action="treiner.html"  class="button_form">
+              <button class="color_black_button">Тренажеры</button>
+            </form>
+            <form action="vocabulary.html"  class="button_form">
+              <button class="color_black_button">Словарь</button>
+            </form>
+          </div>
+
+          <!---Мое обучение--------->
+          <div class="courses_block_1 new">
+            <a href="#">
+              <p class="label_xp_right_big wow fadeIn"><span>+1500</span>xp</p>
+              <img src="img/content/courses/1.png" alt="" class="new">
+            </a>
+          </div>
+          <!--/Мое обучение/-------->
+
+        </div>
+      <!--/ACCOUNT WRAPPer left_block/-------->
+
+      <!----my_level_block------>
+      <div class="my_level_block courses">
+        <h4>Мои достижения</h4>
+
+        <div class="my_progress">
+          <div class="wrapper_canvas_level"></div>
+            <input type="text" value="" class="dial" data-readOnly="true" data-linecap="round" data-angleOffset="180" data-thickness="0.20" data-fgColor="rgba(29,206,121,.9)" data-bgColor="#fff" data-width="228" data-height="228" style="display:none;">
+            <input type="text" value="" class="dial" data-readOnly="true" data-linecap="round" data-angleOffset="180" data-thickness="0.04" data-fgColor="rgba(83,239,174,.6)" data-bgColor="transparent" data-width="227" data-height="227" style="display:none;">
+            <input type="text" value="" class="dial" data-readOnly="true" data-linecap="round" data-angleOffset="180" data-thickness="0.02" data-fgColor="rgba(51,243,165,1)" data-bgColor="transparent" data-width="227" data-height="227" style="display:none;">
+
+            <script>$(function() {$(".dial").knob();});
+            $({animatedVal: 0}).animate({animatedVal: 42}, {
+                duration: 2000,
+                easing: "swing",
+              step: function() {
+                $(".dial").val(Math.ceil(this.animatedVal)).trigger("change");
+              }
+              });
+            </script>
+            <div class="you_level_procent_wrapper"></div>
+            <div class="you_level_procent">42%</div>
+            <a href="#"><div class="MooMe_icon_level">
+              <p class="dialog account_dialog" style="display: none;">
+                Вы можете переодеть<br/>
+                меня щелкнув по мне
+              </p>
+            </div></a>
+
+        </div>
+
+        <div class="wrapper_progress">
+          <p class="count_me_now">Пройдено уроков сегодня <span class="result">0</span></p>
+          <p class="day_count">Количество дней подряд<br/>для получения баллов <span class="result">2/5</span></p>
+          <p class="level_hp">Очки опыта<span class="result">2800<span>xp</span></span></p>
+          <p class="my-prestige">Мои баллы<span class="result">1400<span>xp</span></span></p>
+        </div>
+
+      </div>
+      <!----/my_level_block/------>
+    </div>
+  </div>
+
+
+
+  <div class="wrapper_my_teach">
+    <div class="container">
+      <h1>доступные курсы для изучения английского языка</h1>
+
+
+      <div class="span-item_courses">
+
+            <a href="#">
+              <div class="item_courses">
+                <img src="img/content/courses/1_s.png" alt="">
+                <div class="label_xp">+ 20<span>xp</span></div>
+                <div class="label_price">39.99$</div>
+                <div class="descriprion_item">
+                  <h4>Грамматика</h4>
+                  Подойдет для тех, кто еще не изучал
+                  английский или давно не практиковался,
+                  а также тем, кто хочет повысить свой
+                  уровень знания английского языка
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="item_courses">
+                <img src="img/content/courses/2_s.png" alt="">
+                <div class="label_xp">+ 20<span>xp</span></div>
+                <div class="label_price">39.99$</div>
+                <div class="descriprion_item">
+                  <h4>Строение тела</h4>
+                  Будет полезен тем, кто знает английский,
+                  но хочет повысить уровень
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="item_courses">
+                <img src="img/content/courses/3_s.png" alt="">
+                <div class="label_xp">+ 20<span>xp</span></div>
+                <div class="label_price">39.99$</div>
+                <div class="descriprion_item">
+                  <h4>Внешность</h4>
+                  Подойдет для тех, кому нужно изучить
+                  английский для делового общения
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="item_courses">
+                <img src="img/content/courses/1_s.png" alt="">
+                <div class="label_xp">+ 20<span>xp</span></div>
+                <div class="label_price">39.99$</div>
+                <div class="descriprion_item">
+                  <h4>Грамматика</h4>
+                  Подойдет для тех, кто еще не изучал
+                  английский или давно не практиковался,
+                  а также тем, кто хочет повысить свой
+                  уровень знания английского языка
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="item_courses">
+                <img src="img/content/courses/2_s.png" alt="">
+                <div class="label_xp">+ 20<span>xp</span></div>
+                <div class="label_price">39.99$</div>
+                <div class="descriprion_item">
+                  <h4>Строение тела</h4>
+                  Будет полезен тем, кто знает английский,
+                  но хочет повысить уровень
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="item_courses">
+                <img src="img/content/courses/3_s.png" alt="">
+                <div class="label_xp">+ 20<span>xp</span></div>
+                <div class="label_price">39.99$</div>
+                <div class="descriprion_item">
+                  <h4>Внешность</h4>
+                  Подойдет для тех, кому нужно изучить
+                  английский для делового общения
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="item_courses">
+                <img src="img/content/courses/1_s.png" alt="">
+                <div class="label_xp">+ 20<span>xp</span></div>
+                <div class="label_price">39.99$</div>
+                <div class="descriprion_item">
+                  <h4>Грамматика</h4>
+                  Подойдет для тех, кто еще не изучал
+                  английский или давно не практиковался,
+                  а также тем, кто хочет повысить свой
+                  уровень знания английского языка
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="item_courses">
+                <img src="img/content/courses/2_s.png" alt="">
+                <div class="label_xp">+ 20<span>xp</span></div>
+                <div class="label_price">39.99$</div>
+                <div class="descriprion_item">
+                  <h4>Строение тела</h4>
+                  Будет полезен тем, кто знает английский,
+                  но хочет повысить уровень
+                </div>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="item_courses">
+                <img src="img/content/courses/3_s.png" alt="">
+                <div class="label_xp">+ 20<span>xp</span></div>
+                <div class="label_price">39.99$</div>
+                <div class="descriprion_item">
+                  <h4>Внешность</h4>
+                  Подойдет для тех, кому нужно изучить
+                  английский для делового общения
+                </div>
+              </div>
+            </a>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+<!--/ACCOUNT WRAPPer/-------->
+
+
+  <!---FOOTER--------->
+  <footer>
+    <div class="container">
+      <div class="social_line_footer">
+        <ul>
+          <a href="#"><li class="inst"></li></a>
+          <a href="#"><li class="vk"></li></a>
+          <a href="#"><li class="face_book"></li></a>
+        </ul>
+      </div>
+      <div class="mail_footer"><a href="mailto:moome@gmail.com">moome@gmail.com</a></div>
+      <div class="copyright_footer">MooMe © Все права защищены</div>
+      <div class="development_footer">Разработка сайта:<a href="http://markline.agency">MARKLINE</a></div>
+    </div>
+  </footer>
+  <!--/FOOTER/-------->
+</div>
+
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/jquery.knob.min.js"></script>
+
+<script type="text/javascript">slider_group_control()</script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/icon/favicon.ico">
+    <title>MooMe</title>
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/mediaelementplayer.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/mediaelement-and-player.min.js"></script>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+<!---HEADER------------------>
+    <header class="user_authorized">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="img/logo/logo.png" alt="MooMe study wise"></a>
+        </div>
+
+        <div class="lang_menu">
+          <span class="icon_lang_select">Русский</span>
+          <ul class="lang_menu_second">
+            <li>Английский</li>
+            <li>Итальянский</li>
+          </ul>
+        </div>
+
+        <div class="user_menu">
+          <span class="icon_lang_select">Дмитрий</span>
+          <ul class="user_menu_second">
+            <li>Личные данные</li>
+            <li>Языки обучения</li>
+            <li>Групповое обучение</li>
+            <li>Выйти</li>
+          </ul>
+        </div>
+
+        <div class="notice">
+          <span class="count_notice">5</span>
+          <ul class="notice_list">
+            <li>Пользователь Татьяна
+                подтвердила приглашение
+                в группу «Класс 11-Б»
+                <span class="remove_notice">x</span>
+            </li>
+            <li>Пользователь Татьяна
+                подтвердила приглашение
+                в группу «Класс 11-Б»
+                <span class="remove_notice">x</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+<!--/HEADER/------------------>
+
+<!---ACCOUNT WRAPPer--------->
+
+  <div class="account_wrapper background_page">
+    <div class="container">
+
+    <!-- ------lessons------ -->
+
+      <!-- ------top_wrapper_lessons------ -->
+        <div class="top_wrapper_lessons">
+              <form action="courses.html" class="button_form">
+                <button class="color_black_button">Мое обучение</button>
+              </form>
+              <form action="treiner.html"  class="button_form">
+                <button class="color_black_button">Тренажеры</button>
+              </form>
+              <form action="vocabulary.html"  class="button_form">
+                <button class="color_black_button">Словарь</button>
+              </form>
+              <form action="vocabulary.html"  class="button_form">
+                <button class="color_black_button my_achievements">Мои достижения</button>
+              </form>
+        </div>
+      <!-- ------/top_wrapper_lessons/------ -->
+
+      <!-- ------content_wrapper_lessons------ -->
+        <div class="content_wrapper_lessons">
+
+
+
+          <!-- ------шкала шагов урока------ -->
+          <div class="steps_block_input">
+            <input type="text" value="" class="steps" data-readOnly="true" data-linecap="round" data-angleOffset="180" data-thickness="0.18" data-fgColor="rgba(51,243,165,1)" data-bgColor="transparent" data-width="57" data-height="57" style="display:none;">
+
+            <span>11/15</span>
+
+            <script>
+            var all_steps = 15; /* Всего шагов темы */
+            var now_steps = 11; /* Данный шаг темы */
+
+            var result_procent_steps = now_steps*100/all_steps;
+            $(function() {$(".steps").knob();});
+            $({animatedVal: result_procent_steps}).animate({animatedVal: result_procent_steps}, {
+            duration: 2000,easing: "swing",step: function() {$(".steps").val(Math.ceil(this.animatedVal)).trigger("change");}});
+            </script>
+          </div>
+          <!-- ------/шкала шагов урока/------ -->
+
+
+
+
+            <div class="line-top-1">
+
+                <span class="titel_name">
+                  <h2>Тема: «MooMe приехал на экскурсию»</h2>
+                  <h3>Урок 1 - Meet Bredley Burton</h3>
+                </span>
+
+                <form class="exit_lessons" action="">
+                  <button>Завершить урок</button>
+                </form>
+
+            </div>
+
+            <div class="line-top-2">
+              <!-- Legend infographic -->
+              <ul class="legend_info">
+                <!-- Максимальное рекомендуемое разрешение иконки 55х55px -->
+                <li class="active">
+                  <span><img src="img/icon/lessons/step_1_active.png" alt=""></span>
+                </li>
+                <li><span><img src="img/icon/lessons/step_2.png" alt=""></span></li>
+                <li><span><img src="img/icon/lessons/step_3.png" alt=""></span></li>
+                <li><span><img src="img/icon/lessons/step_4.png" alt=""></span></li>
+                <li><span><img src="img/icon/lessons/step_5.png" alt=""></span></li>
+              </ul>
+            </div>
+
+            <div class="content_lessons">
+
+              <form action="" class="translate_block">
+                <button></button>
+              </form>
+
+              <h1>New York is the biggest city in the USA and one of the largest cities of the World. The population of this<br/>
+                city is near 12 million people. It is the capital of New York State.</h1>
+
+              <p>
+                Some call New York a poem in stone and steel, others a soulless monster. It is unlike any other city in the world.<br/>
+                              At the beginning of the 17th century only the wigwams of the Iroquois stood where the
+                              sky-scrapers of New York now reach to the clouds. In 1626 the Dutch Governor, Peter Minuit,
+                              concluded with them what American business experts call «the most profitable commercial deal in the U.S. history». With several bottles of gin and a handful of trinkets that cost twenty-four dollars, he bought a large island from the simple-hearted, trusting Indians. Later the Indians named the island Manhatta (present-day Manhattan, the main borough of New York, which in Iroquois means:
+              </p>
+
+              <div class="block_img_">
+                <img src="img/content/lessons/3.png" alt="">
+              </div>
+
+            </div>
+
+            <div class="audio_block_less">
+              <audio src="media/audio/lessons/1.mp3" width="100%"></audio>
+            </div>
+            <script>
+            $('audio').mediaelementplayer({success: function(mediaElement, originalNode){}});
+            </script>
+
+
+            <div class="footer_wrap_less">
+              <form action="" class="button_form">
+                <button class="color_black_button">Пропустить</button>
+              </form>
+
+              <form action="" class="button_form inspection">
+                <button class="color_black_button">Проверить</button>
+              </form>
+
+              <form class="need_help" action="">
+                <button>Нужна помощь?</button>
+              </form>
+
+            </div>
+
+
+        </div>
+        <!-- ------/content_wrapper_lessons/------ -->
+
+      <!-- ------/lessons/------ -->
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+<!--/ACCOUNT WRAPPer/-------->
+
+
+  <!---FOOTER--------->
+  <footer>
+    <div class="container">
+      <div class="social_line_footer">
+        <ul>
+          <a href="#"><li class="inst"></li></a>
+          <a href="#"><li class="vk"></li></a>
+          <a href="#"><li class="face_book"></li></a>
+        </ul>
+      </div>
+      <div class="mail_footer"><a href="mailto:moome@gmail.com">moome@gmail.com</a></div>
+      <div class="copyright_footer">MooMe © Все права защищены</div>
+      <div class="development_footer">Разработка сайта:<a href="http://markline.agency">MARKLINE</a></div>
+    </div>
+  </footer>
+  <!--/FOOTER/-------->
+</div>
+
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/jquery.knob.min.js"></script>
+
+
+<script type="text/javascript">slider_group_control()</script>
+</body>
+</html>
